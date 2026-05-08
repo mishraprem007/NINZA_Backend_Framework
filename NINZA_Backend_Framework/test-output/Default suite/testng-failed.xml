@@ -3,11 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ninza.hrm.api.employeetest.EmployeeTest">
+      <class name="com.ninza.hrm.api.projecttest.ProjectTest">
         <methods>
-          <include name="addEmployeeTest"/>
+          <include name="configAS"/>
+          <include name="configBS"/>
+          <include name="addSingleProjectWithCreatedTest"/>
+          <include name="createDuplicateProject"/>
         </methods>
-      </class> <!-- com.ninza.hrm.api.employeetest.EmployeeTest -->
+      </class> <!-- com.ninza.hrm.api.projecttest.ProjectTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
