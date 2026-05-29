@@ -77,7 +77,7 @@ public class DataBaseUtility {
 			System.out.println(expectedData + " ====> data verified in data base table");
 			return true;
 		} else {
-			System.out.println(columnIndex + " ====> data is not verified in data base table");
+			System.out.println(expectedData + " ====> data is not verified in data base table");
 			return false;
 		}
 

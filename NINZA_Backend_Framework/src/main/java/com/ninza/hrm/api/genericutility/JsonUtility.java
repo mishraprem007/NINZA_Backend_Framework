@@ -1,16 +1,10 @@
 package com.ninza.hrm.api.genericutility;
-
 import static io.restassured.RestAssured.given;
 
 /**
  * @author Premshankar Mishra
  */
-import java.io.FileReader;
 import java.util.List;
-
-import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
-import org.json.simple.parser.ParseException;
 
 import com.jayway.jsonpath.JsonPath;
 
@@ -18,6 +12,7 @@ import io.restassured.response.Response;
 
 public class JsonUtility {
 	FileUtility fLib = new FileUtility();
+
 	/**
 	 * get the JSONdata from based on json complext xpath
 	 * 
@@ -67,5 +62,4 @@ public class JsonUtility {
 		String token = resp.jsonPath().get("acess_token");
 		return token;
 	}
-
 }
