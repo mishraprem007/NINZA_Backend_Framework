@@ -23,14 +23,12 @@ public class JavaUtility {
 
 	public String getRequiredDateYYYYDDMM(int days) {
 		Date dateobj = new Date();
-		// if want to capture ony date with simple format
-		SimpleDateFormat sim = new SimpleDateFormat("yyyy-MM-dd");
-		String date = sim.format(dateobj);
-		// for new 30 days from calender class
-		Calendar cal = sim.getCalendar();
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+		Calendar cal = sdf.getCalendar();
+		cal.setTime(dateobj);
 		cal.add(Calendar.DAY_OF_MONTH, days);
-		String reqDate = sim.format(cal.getTime());
+		String reqDate = sdf.format(cal.getTime());
 		return reqDate;
-
 	}
+
 }
